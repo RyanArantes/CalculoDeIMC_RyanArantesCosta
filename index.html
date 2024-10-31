@@ -19,6 +19,8 @@ from browser import document
 valor01=float(document["valor01"].value)
 
 valor02=float(document["valor02"].value)    
+
+def calcular_imc():
     
 valor3=valor02**2
 
@@ -40,5 +42,8 @@ elif imc>=30 and imc<=50:
     print("Seu IMC Atual é {}, o Que De Acordo Com a OMS, Você Está Obeso.".format(imc))
 </script>
 
+<button onclick="calcular_imc()">Calcular IMC</button>
+
+<p id="Resultado"></p>      
 </body>
 </html>
