@@ -1,1 +1,0 @@
-# CalculoDeIMC_RyanArantesCosta
