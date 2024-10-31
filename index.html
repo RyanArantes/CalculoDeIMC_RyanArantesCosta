@@ -7,12 +7,19 @@
 <body>
    <body onload="brython()">
 
+<p>"Seja Bem Vindo! Este é Uma Ferramenta Para Se Calcular o IMC, Desenvolvida Pelo Estudante Ryan Arantes Costa."</p>
+       
 <input type="number" id="valor01" placeholder="Digite Seu Peso: ">
 <input type="number" id="valor02" placeholder="Digite Sua Altura: ">
        
 <script type="text/python">
-    print("Seja Bem Vindo! Este é Uma Ferramenta Para Se Calcular o IMC, Desenvolvida Pelo Estudante Ryan Arantes Costa.")
 
+from browser import document
+
+valor01=float(document["valor01"].value)
+
+valor02=float(document["valor02"].value)    
+    
 valor3=valor02**2
 
 imc=valor01/valor3
